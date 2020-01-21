@@ -67,7 +67,7 @@ function processLength(list, callback) {
  * should return 'barbar'.
 */
 function processLastItem(stringlist, callback) {
-  returns callback(stringlist.length[-i])
+  returns callback(stringlist.length - 1)
 }
 
 /**
