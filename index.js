@@ -166,8 +166,13 @@ function processContains(item, list, callback) {
  * 
  * 0
 */
-function processDuplicateFree(/* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */) {
-  /* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */
+function processDuplicateFree(list, callback) {
+  const unique = []
+  for (let i = 0; i < list.length; i++){
+    if (!unique.includes(list[i])){
+      unique.push(list[i])
+    }
+  } return callback(unique)
 }
 
 /////////////// HIGHER-ORDER ARRAY METHODS ///////////////
@@ -206,7 +211,9 @@ function getFullNames(runners) {
  * The first names appear in the array in the same order the runners appear in the `runners` array.
 */
 function firstNamesAllCaps(runners) {
-  returns runners.map(firstNamesAllCaps(i, runners))
+  return runners.map(function (runnerobject) {
+  return runnerobject.first_name.toUppercase()
+  }
 }
 
 /**
