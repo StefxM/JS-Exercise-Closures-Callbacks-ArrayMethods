@@ -48,8 +48,8 @@ function processFirstItem(stringList, callback) {
  * [2] Invoking `processLength` passing `[]` and `(num) => "There are " + num`,
  * should return "There are 0".
 */
-function processLength(list, callback) {
-  return callback(list.length[i])
+function processLength(list, callback[i]) {
+  return callback([list.length])
 }
 
 /**
@@ -67,7 +67,7 @@ function processLength(list, callback) {
  * should return 'barbar'.
 */
 function processLastItem(stringlist, callback) {
-  returns callback(stringlist.length - 1)
+  returns callback(stringlist.length - 1);
 }
 
 /**
@@ -87,8 +87,8 @@ function processLastItem(stringlist, callback) {
  * [2] Invoking `processSum` passing `[]` and `(num) => num + 1000`,
  * should return 1000.
 */
-function processSum(numberlist) {
-  /* CODE HERE */
+function processSum(numberlist, callback) {
+  return callback[numberlist(numberlist + 1)];
 }
 
 /**
@@ -109,8 +109,8 @@ function processSum(numberlist) {
  * [2] Invoking `processProduct` passing 25 and 0 and `(num) => num + 1000`,
  * should return 1000.
 */
-function processProduct(/* CODE HERE */) {
-  /* CODE HERE */
+function processProduct(num1, num2, callback) {
+  return callback
 }
 
 /**
@@ -155,6 +155,9 @@ function processContains(/* CODE HERE */) {
  * 
  * [2] Invoking `processDuplicateFree` passing `[1,1,2,2,3]` and `(arr) => arr.length`,
  * should return 3.
+ * 
+ * 
+ * 0
 */
 function processDuplicateFree(/* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */) {
   /* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */
