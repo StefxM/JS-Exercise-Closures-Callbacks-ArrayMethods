@@ -67,7 +67,7 @@ function processLength(list, callback[i]) {
  * should return 'barbar'.
 */
 function processLastItem(stringlist, callback) {
-  returns callback(stringlist.length[i]);
+  return callback(stringlist[stringlist.length - 1]);
 }
 
 /**
@@ -88,7 +88,11 @@ function processLastItem(stringlist, callback) {
  * should return 1000.
 */
 function processSum(numberlist, callback) {
-  return callback[numberlist(numberlist[i] + 1)];
+  let sum = 0 
+
+  for (let i = 0; i < numberlist.length; i++) {
+    sum = numberlist[i] + sum;
+  } return callback(sum)
 }
 
 /**
@@ -134,10 +138,11 @@ function processProduct(num1, num2, callback) {
  * should return "sad".
 */
 function processContains(item, list, callback) {
-  returns callback({
+  
+  return callback(list.includes(item))
 
-  })
-}
+  }
+
 
 /**
  * ### Challenge `processDuplicateFree`
@@ -184,7 +189,8 @@ function processDuplicateFree(/* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS
  * The full names appear in the array in the same order the runners appear in the `runners` array.
 */
 function getFullNames(runners) {
-  return runners.forEach(getFullNames(i, runners))
+  const fullnames = []
+  return runners.forEach(person => fullnames.push)
 }
 
 /**
