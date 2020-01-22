@@ -67,7 +67,7 @@ function processLength(list, callback[i]) {
  * should return 'barbar'.
 */
 function processLastItem(stringlist, callback) {
-  returns callback(stringlist.length - 1);
+  returns callback(stringlist.length[i]);
 }
 
 /**
@@ -88,7 +88,7 @@ function processLastItem(stringlist, callback) {
  * should return 1000.
 */
 function processSum(numberlist, callback) {
-  return callback[numberlist(numberlist + 1)];
+  return callback[numberlist(numberlist[i] + 1)];
 }
 
 /**
@@ -110,7 +110,7 @@ function processSum(numberlist, callback) {
  * should return 1000.
 */
 function processProduct(num1, num2, callback) {
-  return callback
+  return callback(num1 * num2);
 }
 
 /**
@@ -133,8 +133,10 @@ function processProduct(num1, num2, callback) {
  * "lady gaga" and `['foo', 'bar']` and `(bool) => bool ? 'nice!' : 'sad'`,
  * should return "sad".
 */
-function processContains(/* CODE HERE */) {
-  /* CODE HERE */
+function processContains(item, list, callback) {
+  returns callback({
+
+  })
 }
 
 /**
@@ -181,8 +183,8 @@ function processDuplicateFree(/* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS
  * @returns an array with all the runners' full names in the following format: "Smith, John".
  * The full names appear in the array in the same order the runners appear in the `runners` array.
 */
-function getFullNames(/* CODE HERE */) {
-  /* CODE HERE */
+function getFullNames(runners) {
+  return runners.forEach(getFullNames(i, runners))
 }
 
 /**
@@ -197,8 +199,8 @@ function getFullNames(/* CODE HERE */) {
  * @returns an array with all the runners' first names in ALL CAPS.
  * The first names appear in the array in the same order the runners appear in the `runners` array.
 */
-function firstNamesAllCaps(/* CODE HERE */) {
-  /* CODE HERE */
+function firstNamesAllCaps(runners) {
+  returns runners.map(firstNamesAllCaps(i, runners))
 }
 
 /**
@@ -214,7 +216,7 @@ function firstNamesAllCaps(/* CODE HERE */) {
  * @returns an array containing only the runners that use the given `tShirtSize`.
  * The runners in the array appear in the same order they appear in the `runners` array.
 */
-function getRunnersByTShirtSize(/* CODE HERE */) {
+function getRunnersByTShirtSize(runners, tShirtSize) {
   /* CODE HERE */
 }
 
